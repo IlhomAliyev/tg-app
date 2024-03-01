@@ -1,0 +1,46 @@
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  list-style: none;
+
+  background: var(--accent);
+  color: white;
+  padding: 10px;
+
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  border-radius: 12px;
+
+  li {
+    flex: 1 0 50%;
+    text-align: center;
+  }
+}
+
+.link {
+  display: block;
+  padding: 10px 15px;
+  border-radius: 10px;
+  width: 100%;
+  transition: 200ms;
+
+  &:hover {
+    background: lightgrey;
+    color: black;
+  }
+
+  &_active {
+    font-weight: bold;
+    background: var(--bg);
+    color: var(--text);
+    
+    &:hover {
+      background: var(--bg);
+      color: var(--text);
+    }
+  }
+}

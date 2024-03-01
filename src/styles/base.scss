@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html, body, #root {
+  height: 100%;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -28,7 +32,19 @@ a {
 
 @media (prefers-color-scheme: dark) {
   body {
-    --bg: #333;
+    --bg: #282828;
     --text: #fff;
+  }
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  border: 1px solid white;
+
+  .content {
+    flex: 1 0 auto;
   }
 }
