@@ -1,0 +1,12 @@
+body {
+  --bg: #fff;
+  --text: #000;
+  --accent: rgb(65, 105, 225);
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    --bg: #282828;
+    --text: #fff;
+  }
+}

@@ -1,7 +1,7 @@
 export const routes = [
   {
     name: "Main",
-    path: "/main",
+    path: "/",
   },
   {
     name: "Profile",

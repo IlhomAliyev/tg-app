@@ -1,10 +1,14 @@
+@import "./colors";
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html, body, #root {
+html,
+body,
+#root {
   height: 100%;
 }
 
@@ -13,12 +17,11 @@ html {
 }
 
 body {
-  --bg: #fff;
-  --text: #000;
-  --accent: rgb(65, 105, 225);
   font-family: Arial, Helvetica, sans-serif;
-  background: var(--bg);
-  color: var(--text);
+  // background: var(--bg);
+  // color: var(--text);
+  background: var(--tg-theme-bg-color);
+  color: var(--tg-theme-text-color);
 }
 
 a {
@@ -30,19 +33,10 @@ a {
   }
 }
 
-@media (prefers-color-scheme: dark) {
-  body {
-    --bg: #282828;
-    --text: #fff;
-  }
-}
-
 .App {
   display: flex;
   flex-direction: column;
   height: 100%;
-
-  border: 1px solid white;
 
   .content {
     flex: 1 0 auto;

@@ -5,7 +5,7 @@ import useTelegram from "./hooks/useTelegram";
 import { useEffect } from "react";
 
 const AppLayout = () => {
-  const tg = useTelegram();
+  const { tg } = useTelegram();
 
   useEffect(() => {
     if (tg) {

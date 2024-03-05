@@ -12,10 +12,6 @@ export const routes = [
         element: <MainPage />,
       },
       {
-        path: "/main",
-        element: <MainPage />,
-      },
-      {
         path: "/profile",
         element: <ProfilePage />,
       },
